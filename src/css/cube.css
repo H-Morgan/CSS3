@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #eee;
+}
+/* 立方体 */
+.cube-container {
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(-33.5deg) rotateY(45deg);
+  -moz-transform: rotateX(-33.5deg) rotateY(45deg);
+  -o-transform: rotateX(-33.5deg) rotateY(45deg);
+  transform: rotateX(-33.5deg) rotateY(45deg);
+}
+.cube-container div {
+  position: absolute;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(transparent 30%, rgba(0, 0, 0, 0.3) 100%);
+}
+.cube-container div:before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+.cube-container div:nth-of-type(1) {
+  -webkit-transform: translateZ(100px);
+  -moz-transform: translateZ(100px);
+  -o-transform: translateZ(100px);
+  transform: translateZ(100px);
+}
+.cube-container div:nth-of-type(2) {
+  -webkit-transform: rotateY(90deg) translateX(-50px) translateZ(50px);
+  -moz-transform: rotateY(90deg) translateX(-50px) translateZ(50px);
+  -o-transform: rotateY(90deg) translateX(-50px) translateZ(50px);
+  transform: rotateY(90deg) translateX(-50px) translateZ(50px);
+}
+.cube-container div:nth-of-type(3) {
+  -webkit-transform: rotateY(90deg) translateX(-50px) translateZ(-50px);
+  -moz-transform: rotateY(90deg) translateX(-50px) translateZ(-50px);
+  -o-transform: rotateY(90deg) translateX(-50px) translateZ(-50px);
+  transform: rotateY(90deg) translateX(-50px) translateZ(-50px);
+}
+.cube-container div:nth-of-type(4) {
+  -webkit-transform: rotateX(90deg) translateY(50px) translateZ(-50px);
+  -moz-transform: rotateX(90deg) translateY(50px) translateZ(-50px);
+  -o-transform: rotateX(90deg) translateY(50px) translateZ(-50px);
+  transform: rotateX(90deg) translateY(50px) translateZ(-50px);
+}
+.cube-container div:nth-of-type(5) {
+  -webkit-transform: rotateX(90deg) translateY(50px) translateZ(50px);
+  -moz-transform: rotateX(90deg) translateY(50px) translateZ(50px);
+  -o-transform: rotateX(90deg) translateY(50px) translateZ(50px);
+  transform: rotateX(90deg) translateY(50px) translateZ(50px);
+}
