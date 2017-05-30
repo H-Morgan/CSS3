@@ -105,3 +105,37 @@
   border-radius: 0 0 50px 50px;
   box-shadow: 0 5px 0 5px #99CC66;
 }
+.container li .handbag {
+  position: relative;
+  margin: 50px auto;
+  width: 100px;
+  height: 80px;
+  background: linear-gradient(135deg, transparent 10px, #333 0) top left, linear-gradient(-135deg, transparent 10px, #333 0) top right, linear-gradient(-45deg, transparent 10px, #333 0) bottom right, linear-gradient(45deg, transparent 10px, #333 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
+.container li .handbag:before {
+  content: '★';
+  position: absolute;
+  top: 13px;
+  left: 25px;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 47px;
+  box-shadow: 1px 1px 1px 1px #000;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.4) 50%, transparent 65%), linear-gradient(-45deg, transparent 30%, rgba(255, 255, 255, 0.4) 50%, transparent 65%), linear-gradient(90deg, transparent 30%, rgba(0, 0, 0, 0.3) 50%, transparent 65%), linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, 0.3) 50%, transparent 65%), radial-gradient(ellipse at center, #0033b0 20%, #ce0021 20%, #ce0021 35%, #eee 35%, #eee 55%, #ce0021 55%);
+}
+.container li .handbag:after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 35px;
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid #333;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+}

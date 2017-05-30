@@ -1,132 +1,151 @@
-.container{
-	margin: 0 auto;
-	width: 1024px;
-	li {
-		display: inline-block;
-		width: 200px;
-		height: 200px;
-		padding: 15px;
-		background-color: #eee;
-		&:nth-of-type(2){
-			background-color: #222233;
-		}
-		&:nth-of-type(3){
-			background-color: #0bf;
-		}
-		.moon{
-			margin: 50px auto;
-			width: 100px;
-			height: 100px;
-			background-color: #222233;
-			border-radius: 50%;
-			box-shadow: 20px -20px 0px 5px #fff inset;
-		}
-		.sun{
-			margin: 50px auto;
-			width: 100px;
-			height: 100px;
-			border-radius: 50%;
-			background-color: rgba(255, 238, 68, 1);
-			box-shadow: 0 0 25px 20px rgba(255,255,0,0.3),0 0 20px #fff;
-		}
-		.cloud{
-			position: relative;
-			margin: 70px 40px;
-			width: 50px;
-			height: 50px;
-			border-radius: 50%;
-			background-color: #fff;
-			box-shadow: 
-			#fff 65px -15px 0 -5px,
-            #fff 25px -25px,
-            #fff 30px 10px,
-            #fff 60px 15px 0 -10px,
-            #fff 85px 5px 0 -5px;
+.container {
+    margin: 0 auto;
+    width: 1024px;
+    li {
+        display: inline-block;
+        width: 200px;
+        height: 200px;
+        padding: 15px;
+        background-color: #eee;
+        &:nth-of-type(2) {
+            background-color: #222233;
+        }
+        &:nth-of-type(3) {
+            background-color: #0bf;
+        }
+        .moon {
+            margin: 50px auto;
+            width: 100px;
+            height: 100px;
+            background-color: #222233;
+            border-radius: 50%;
+            box-shadow: 20px -20px 0px 5px #fff inset;
+        }
+        .sun {
+            margin: 50px auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: rgba(255, 238, 68, 1);
+            box-shadow: 0 0 25px 20px rgba(255, 255, 0, 0.3), 0 0 20px #fff;
+        }
+        .cloud {
+            position: relative;
+            margin: 70px 40px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            box-shadow: #fff 65px -15px 0 -5px, #fff 25px -25px, #fff 30px 10px, #fff 60px 15px 0 -10px, #fff 85px 5px 0 -5px;
+            &:before {
+                content: '';
+                position: absolute;
+                top: -10px;
+                left: 5px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.5);
+                box-shadow: rgba(255, 255, 255, 0.5) 65px -15px 0 -5px, rgba(255, 255, 255, 0.5) 25px -25px, rgba(255, 255, 255, 0.5) 30px 10px, rgba(255, 255, 255, 0.5) 60px 15px 0 -10px, rgba(255, 255, 255, 0.5) 85px 5px 0 -5px;
+            }
+        }
+        .chrome {
+            margin: 50px auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-image: radial-gradient(#4FACF5 0%, #2196F3 28%, transparent 28.5%), radial-gradient(#fff 33%, transparent 33.5%), linear-gradient(-50deg, #FFEB3B 34%, transparent 34%), linear-gradient(60deg, #4CAF50 33%, transparent 33%), linear-gradient(180deg, #FF756B 0%, #F44336 30%, transparent 30%), linear-gradient(-120deg, #FFEB3B 40%, transparent 40%), linear-gradient(-60deg, #FFEB3B 30%, transparent 30%), linear-gradient(0deg, #4CAF50 45%, transparent 45%), linear-gradient(60deg, #4CAF50 30%, transparent 30%), linear-gradient(120deg, #F44336 50%, transparent 50%), linear-gradient(180deg, #F44336 30%, transparent 30%);
+        }
+        .opera {
+            position: relative;
+            margin: 45px auto;
+            width: 85px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px #333;
+            background-image: linear-gradient(rgb(254, 135, 138) 0%, rgb(231, 22, 22) 50%, rgb(128, 0, 0) 85%, rgb(184, 3, 4) 100%);
+            &:before {
+                content: '';
+                position: absolute;
+                top: 5px;
+                left: 27.5px;
+                width: 30px;
+                height: 90px;
+                background-color: #fff;
+                border-radius: 50%;
+            }
+        }
+        .sogou {
+            position: relative;
+            margin: 55px auto 60px auto;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #4DA0ED;
+            box-shadow: 0 0 0 5px #fff, 2px 1px 1px 5px rgba(0, 0, 0, 0.3);
+            &:before {
+                content: 'S';
+                position: absolute;
+                top: -52px;
+                left: 6px;
+                color: #fff;
+                font-size: 157px;
+                font-weight: 600;
+                text-shadow: 3px 0 0px #337FC4, -3px -2px 0px #CDE4F0, 0px 5px 0px #387FBF;
+            }
+        }
+        .watermelon {
+            margin: 75px auto;
+            width: 100px;
+            height: 50px; //half of width
+            background-color: #CC3333;
+            border-radius: 0 0 50px 50px;
+            box-shadow: 0 5px 0 5px #99CC66;
+        }
+        .handbag {
+            position: relative;
+            margin: 50px auto;
+            width: 100px;
+            height: 80px;
+            background: 
+            linear-gradient(135deg, transparent 10px, #333 0) top left, 
+            linear-gradient(-135deg, transparent 10px, #333 0) top right, 
+            linear-gradient(-45deg, transparent 10px, #333 0) bottom right, 
+            linear-gradient(45deg, transparent 10px, #333 0) bottom left;
+            background-size: 50% 50%;
+            background-repeat: no-repeat; 
             &:before{
+            	content: '★';
+            	position: absolute;
+            	top: 13px;
+            	left: 25px;
+				width: 50px;
+				height: 50px;
+				color: #fff;
+				border-radius: 50%;
+				text-align: center;
+				line-height: 47px;
+				box-shadow: 1px 1px 1px 1px #000;
+				background:
+				linear-gradient(45deg,transparent 30%,rgba(255, 255, 255, .4) 50%,transparent 65%),
+				linear-gradient(-45deg,transparent 30%,rgba(255, 255, 255, .4) 50%,transparent 65%),
+				linear-gradient(90deg,transparent 30%,rgba(0, 0, 0, .3) 50%,transparent 65%),
+				linear-gradient(180deg,transparent 30%,rgba(0, 0, 0, .3) 50%,transparent 65%),
+				radial-gradient(ellipse at center, #0033b0 20%, #ce0021 20%, #ce0021 35%, #eee 35%, #eee 55%, #ce0021 55%);
+            }
+            &:after{
             	content: '';
             	position: absolute;
-            	top: -10px;
-            	left: 5px;
-            	width: 50px;
-				height: 50px;
-				border-radius: 50%;
-				background-color: rgba(255, 255, 255, 0.5);
-				box-shadow: 
-				rgba(255, 255, 255, 0.5) 65px -15px 0 -5px,
-	            rgba(255, 255, 255, 0.5) 25px -25px,
-	            rgba(255, 255, 255, 0.5) 30px 10px,
-	            rgba(255, 255, 255, 0.5) 60px 15px 0 -10px,
-	            rgba(255, 255, 255, 0.5) 85px 5px 0 -5px;
+            	top: -20px;
+            	left: 35px;
+            	width: 0;
+            	height: 0;
+            	border-bottom: 20px solid #333;
+            	border-left: 16px solid transparent;
+            	border-right: 16px solid transparent;
             }
-		}
-		.chrome{
-			margin: 50px auto;
-			width: 100px;
-			height: 100px;
-			border-radius: 50%;
-			background-image:
-            radial-gradient(#4FACF5 0%,#2196F3 28%, transparent 28.5%),
-            radial-gradient(#fff 33%, transparent 33.5%),
-            linear-gradient(-50deg,#FFEB3B 34%, transparent 34%),
-            linear-gradient(60deg,#4CAF50 33%, transparent 33%),
-            linear-gradient(180deg,#FF756B 0%, #F44336 30%, transparent 30%),
-            linear-gradient(-120deg,#FFEB3B 40%, transparent 40%),
-            linear-gradient(-60deg,#FFEB3B 30%, transparent 30%),
-            linear-gradient(0deg,#4CAF50 45%, transparent 45%),
-            linear-gradient(60deg,#4CAF50 30%, transparent 30%),
-            linear-gradient(120deg,#F44336 50%, transparent 50%),
-            linear-gradient(180deg,#F44336 30%, transparent 30%);
-		}
-		.opera{
-			position: relative;
-			margin: 45px auto;
-			width: 85px;
-			height: 100px;
-			border-radius: 50%;
-			box-shadow: 0 2px 4px #333;
-			background-image: 
-			linear-gradient(rgb(254, 135, 138) 0%, rgb(231, 22, 22) 50%, rgb(128, 0, 0) 85%, rgb(184, 3, 4) 100%);
-			&:before{
-				content: '';
-				position: absolute;
-				top: 5px;
-				left: 27.5px;
-				width: 30px;
-				height: 90px;
-				background-color: #fff;
-				border-radius: 50%;
-			}
-		}
-		.sogou{
-			position: relative;
-			margin: 55px auto 60px auto;
-			width: 100px;
-			height: 100px;
-			border-radius: 50%;
-			overflow: hidden;
-			background-color: #4DA0ED;
-			box-shadow: 0 0 0 5px #fff,2px 1px 1px 5px rgba(0, 0, 0, 0.3);
-			&:before{
-				content: 'S';
-				position: absolute;
-				top: -52px;
-				left: 6px;
-				color: #fff;
-				font-size: 157px;
-				font-weight: 600;
-				text-shadow:
-		            3px 0 0px #337FC4,
-		            -3px -2px 0px #CDE4F0,
-		            0px 5px 0px #387FBF;
-			}
-		}
-		.watermelon{
-			margin: 75px auto;
-			width: 100px;
-			height: 50px;	//half of width
-			background-color: #CC3333;
-			border-radius: 0 0 50px 50px;
-			box-shadow: 0 5px 0 5px #99CC66;
-		}
-	}
+        }
+        .star {}
+    }
 }
