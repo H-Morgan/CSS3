@@ -15,6 +15,23 @@
 .container li:nth-of-type(3) {
   background-color: #0bf;
 }
+.container li .drop {
+  position: relative;
+  margin: 50px auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 100% 0 55% 50% / 55% 0 100% 50%;
+  transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -moz-transform: rotate(-45deg);
+  /* Firefox */
+  -webkit-transform: rotate(-45deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(-45deg);
+  /* Opera */
+  background: linear-gradient(45deg, #4facf5, #fff);
+}
 .container li .moon {
   margin: 50px auto;
   width: 100px;
